@@ -1,0 +1,22 @@
+.container {
+    height: 85vh;
+  }
+  .contact h1 {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .contact label {
+    position: relative;
+    transition: all 0.5s;
+    top: 40px;
+  }
+  .contact .showLable {
+    top: 0;
+  }
+  label {
+    color: #1abc9c;
+  }
+  .form .send {
+    background-color: #1abc9c;
+  }

@@ -1,0 +1,28 @@
+<div class="contact d-flex justify-content-center align-items-center py-4 position-relative">
+  <div class="container">
+    <h1 class="text-center">CONATCT SECTION</h1>
+    <app-starblack></app-starblack>
+    <div class="form">
+      <label [ngClass]="{ showLable: userName.length > 0 }" class="p-1 py-2" for="floatingInput">userName</label>
+
+      <input [(ngModel)]="userName" type="text"
+        class="form-control py-1 position-relative border-0 border-bottom shadow-none" id="floatingInput"
+        placeholder="userName" />
+      <label [ngClass]="{ showLable: userAge != null }" class="p-1 py-2" for="floatingInput1">userAge</label>
+
+      <input [(ngModel)]="userAge" value="s" type="number"
+        class="form-control py-1 position-relative border-0 border-bottom shadow-none" id="floatingInput1"
+        placeholder="userAge" />
+      <label [ngClass]="{ showLable: userEmail.length > 0 }" class="p-1 py-2" for="floatingInput2">userEmail</label>
+      <input [(ngModel)]="userEmail" type="email"
+        class="form-control py-1 position-relative border-0 border-bottom shadow-none" id="floatingInput2"
+        placeholder="userEmail" />
+      <label [ngClass]="{ showLable: userPassword.length > 0 }" class="p-1 py-2"
+        for="floatingInput3">userPassword</label>
+      <input [(ngModel)]="userPassword" type="password"
+        class="form-control py-1 position-relative border-0 border-bottom shadow-none" id="floatingInput3"
+        placeholder="userPassword" />
+      <button class="btn send text-white my-4">send message</button>
+    </div>
+  </div>
+</div>

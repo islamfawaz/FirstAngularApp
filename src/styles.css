@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+
+
+.line{
+    border:white;
+    border-style: solid;
+    border-width: 2px;
+    width: 80px;
+}
+
+.lineb{
+    border:#2C3E50;
+    border-style: solid;
+    border-width: 2px;
+    width: 80px;
+
+}
+.colorpor{
+    color: #2C3E50;
+}
+
+.home-about{
+    background-color: #1ABC9C;
+}

@@ -1,0 +1,31 @@
+h1 {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .layer {
+    background-color: #1abc9ce6;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+  figure:hover .layer {
+    opacity: 1;
+  }
+  
+  .overlayImage {
+    background-color: rgb(13 110 253 / 20%);
+    inset: 0;
+    z-index: 1;
+  }
+  .overlayImage .w-35 {
+    width: 35%;
+  }
+  .overlayImage figure .layerBoxImage {
+    inset: 0;
+  }
+  .layerBoxImage i {
+    background-color: #2c3e50;
+    border: 3px solid #fff;
+    cursor: pointer;
+  }

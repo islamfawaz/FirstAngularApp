@@ -1,0 +1,28 @@
+<div class="portfolio d-flex justify-content-center align-items-center py-4">
+    <div class="container text-center">
+        <h1>PORTFOLIO COMPONENT</h1>
+        <app-starblack></app-starblack>
+        <div class="row g-5">
+            <ng-container *ngFor="let repeat of [0, 1]">
+                <ng-container *ngFor="let imge of urlImages.sort(); let i = index">
+                    <div class="col-lg-4 col-md-6" (click)="ifClickIMage(imge)">
+                        <figure class="mb-0 position-relative" role="button">
+                            <img class="w-100 rounded-3" [src]="imge" alt="port{{ i }}" />
+                            <div
+                                class="layer rounded-3 position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                                <i class="text-white fa-solid fa-plus fa-6x"></i>
+                            </div>
+                        </figure>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </div>
+        <div *ngIf="isClicked" (click)="ifCloseImage($event)"
+            class="overlayImage position-fixed d-flex justify-content-center align-items-center">
+            <figure class="position-relative w-35">
+                <img class="w-100" [src]="cImage" alt="logo" />
+             
+            </figure>
+        </div>
+    </div>
+</div>
