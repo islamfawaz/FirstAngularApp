@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
   urlImages: string[] = [
-    './../../assets/images/photo2.png',
-    './../../assets/images/photo3.png',
-    './../../assets/images/photo4.png',
+    './assets/images/photo2.png',
+    './assets/images/photo3.png',
+    './assets/images/photo4.png',
   ];
   isClicked: boolean = false;
   cImage: string = '';
